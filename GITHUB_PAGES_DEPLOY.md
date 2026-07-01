@@ -1,42 +1,37 @@
 # วิธีเผยแพร่ด้วย GitHub Pages
 
-## ไฟล์ชุดนี้พร้อมอัป GitHub Pages แล้ว
+## โครงสร้างไฟล์ที่ต้องมี
 
-ให้แตก ZIP ก่อน แล้วอัปโหลดไฟล์/โฟลเดอร์ทั้งหมดขึ้น GitHub repository โดยให้ `index.html` อยู่ชั้นบนสุดของ repository
+โปรเจกต์นี้ใช้ GitHub Pages จาก branch `main` และ folder `/(root)` โดยให้ `index.html` อยู่ชั้นบนสุดของ repository
 
-โครงสร้างที่ถูกต้อง:
+โครงสร้างไฟล์ที่ถูกต้องสำหรับเว็บปัจจุบัน:
 
 ```txt
 index.html
+style.css
+app.js
 firebase-config.js
 firebase.rules.json
 README.md
 FIREBASE_SETUP.md
 GITHUB_PAGES_DEPLOY.md
 .nojekyll
-assets/
-  university-logo.png
 ```
 
-> หมายเหตุ: โลโก้มุมซ้ายบนถูกฝังไว้ใน `index.html` แล้ว ต่อให้ path รูปมีปัญหา โลโก้ก็ยังแสดงได้
+> เวอร์ชันนี้ไม่ต้องมีโฟลเดอร์ `assets/` เพราะไฟล์เว็บปัจจุบันไม่ได้เรียกใช้โฟลเดอร์นั้นโดยตรง
 
 ## ขั้นตอนตั้งค่า GitHub Pages
 
-1. สร้าง repository ใหม่ เช่น `receipt-app`
-2. แตกไฟล์ ZIP นี้
-3. อัปโหลดไฟล์ทั้งหมดเข้า repository ห้ามอัปโหลด ZIP ทั้งก้อน
-4. ไปที่ `Settings` > `Pages`
-5. เลือก:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/(root)`
+1. เข้า repository `receipt-app`
+2. ไปที่ `Settings` > `Pages`
+3. ที่ `Build and deployment` เลือก `Deploy from a branch`
+4. Branch เลือก `main`
+5. Folder เลือก `/(root)`
 6. กด `Save`
-7. รอประมาณ 1-10 นาที
-
-ลิงก์เว็บจะเป็นรูปแบบ:
+7. เปิดเว็บที่:
 
 ```txt
-https://USERNAME.github.io/receipt-app/
+https://jindarungtiwaj31.github.io/receipt-app/
 ```
 
 ## ก่อนใช้งานหลายเครื่องจริง
@@ -50,4 +45,8 @@ https://USERNAME.github.io/receipt-app/
 5. นำเนื้อหาในไฟล์ `firebase.rules.json` ไปวาง
 6. กด `Publish`
 
-ถ้าไม่เปิด Realtime Database ระบบอาจยังทำงานแบบ Local DB ในเครื่องเดียว
+ถ้าเชื่อมต่อสำเร็จ เว็บจะแสดงสถานะว่า `ฐานข้อมูลกลางเชื่อมต่อแล้ว`
+
+## หมายเหตุเรื่องโลโก้
+
+โลโก้ด้านบนของหน้าเว็บยังแสดงตามปกติ ส่วนโลโก้มหาวิทยาลัยที่อยู่ใต้ครุฑในหน้าใบเสร็จ/ตอนพิมพ์ถูกซ่อนแล้วตามที่กำหนด
