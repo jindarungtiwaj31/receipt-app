@@ -1,3 +1,19 @@
+# ระบบออกใบเสร็จรับเงิน RMUT
+
+ชุดนี้เป็นเวอร์ชันพร้อมอัป GitHub Pages
+
+## เริ่มใช้งานเร็ว
+
+1. แตกไฟล์ ZIP
+2. อัปโหลดไฟล์ทั้งหมดขึ้น GitHub repository
+3. เปิด GitHub Pages จาก `Settings > Pages`
+4. เลือก `main` และ `/(root)`
+5. รอลิงก์เว็บจาก GitHub Pages
+
+ฐานข้อมูลกลางใช้ Firebase Realtime Database โปรดอ่าน `FIREBASE_SETUP.md`
+
+---
+
 # ระบบออกใบเสร็จรับเงิน มทร.สุวรรณภูมิ
 
 ## สถานะ Firebase ในแพ็กนี้
